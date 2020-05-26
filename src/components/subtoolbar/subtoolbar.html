@@ -1,0 +1,17 @@
+<!-- Generated template for the SubtoolbarComponent component -->
+<ion-toolbar color="darkblue" class="md app-md">
+  <ion-buttons>
+    <button ion-button color="light" clear (tap)="comeback()">
+      <ion-icon name="arrow-back"></ion-icon>
+    </button>
+  
+    <button class="btns" ion-button *ngIf="type == 'products'" color="dark"  (tap)="openModal('newproduct')">
+      <ion-icon name="add-circle"></ion-icon> &nbsp; New Product
+    </button>
+    <button class="btns" ion-button *ngIf="type == 'product'" color="dark"  (tap)="newProduct()">
+      <ion-icon name="save"></ion-icon> &nbsp; Save Changes
+    </button>
+  
+  </ion-buttons>
+</ion-toolbar>
+

@@ -1,0 +1,114 @@
+
+  
+<!-- <ion-header>
+  <ion-toolbar color="darkblue">
+    <ion-item start class="country-select md">
+      <ion-select id="countries" interface="popover" [(ngModel)]="country" (tap)="countryIcon()" (ionChange)="countryChange($event)">
+        <ion-option value="GLOBAL"><ion-icon name="globe"></ion-icon>Global</ion-option>
+        <ion-option value="TUR">Turkey</ion-option>
+        <ion-option value="CHN">China</ion-option>
+      </ion-select>
+    </ion-item>
+ <ion-buttons *ngIf="back == true" start>
+  <button ion-button clear color="light" (tap)="goControl()"><ion-icon name="arrow-back"></ion-icon></button>
+  
+ </ion-buttons>
+<ion-buttons end *ngIf="id == 0">
+  <button ion-button clear (tap)="goRegister()">Free Sign Up</button> <b class="sp">/</b>
+  <button ion-button clear (tap)="goLogin()"> Sign In</button>
+</ion-buttons>
+<ion-buttons end *ngIf="id != 0">
+  <button ion-button clear (tap)="goControl()"><ion-icon name="chatbubbles"></ion-icon> &nbsp; Mailboxes (0)</button> 
+   <b class="sp">/</b>
+  <button ion-button clear (tap)="goControl()"><ion-icon name="cart"></ion-icon> &nbsp; Buyer Requests (0)</button> 
+   <b class="sp">/</b>
+  <button ion-button clear (tap)="goControl()"><ion-icon name="cog"></ion-icon> &nbsp; My Business</button> 
+   <b class="sp">/</b>
+
+  <button ion-button clear (tap)="clear()">Logout</button>
+</ion-buttons>
+
+  </ion-toolbar>
+  
+  
+</ion-header> -->
+
+  <div class="header " >
+    <ion-grid class="container">
+      <ion-row >
+        <ion-col col-sm-12 col-12 col-xs-12 col-md-12 col-lg-3 class="logocenter" >
+          <img src="assets/imgs/assistlogo.png" class="logo" (tap)="comeback()" tappable />
+        </ion-col>
+        <ion-col col-lg-4 col-12 col-xl-3 col-sm-12 col-md-12>
+          <ion-searchbar class="anasearch android md" mode="md" placeholder="Ara"></ion-searchbar>
+        </ion-col>
+        <ion-col col-lg-3 col-12 col-xl-6 col-sm-12 col-md-12 class="menubars">
+       <!--   <ion-buttons start>
+            <button ion-button icon-only menuToggle>
+              <ion-icon name="menu"></ion-icon>>
+            </button>
+        </ion-buttons>--> 
+    <ion-item start class="country-select md">
+      <ion-select id="countries" interface="popover" [(ngModel)]="country" (tap)="countryIcon()" (ionChange)="countryChange($event)">
+        <ion-option value="TUR">Turkey</ion-option>
+        <ion-option value="CHN">China</ion-option>
+      </ion-select>
+    </ion-item>
+    <img src="assets/imgs/globe.svg" alt="" style="margin-right: 30px;">
+   
+          <a href="#"   color="primary" small class="ios xs menulink"  clear round mode="ios">Bir assist isteyin</a>
+          <a (tap)="goPartner()"  color="primary" small class="ios xs menulink"  clear round mode="ios">Partner olun</a>
+      
+          <a  (tap)="goLogin()" color="primary" small class="ios xs menulink"  clear round mode="ios">Oturum açın</a>
+          <a  (tap)="goRegister()"  color="primary" small class="ios sx register" round mode="ios">Kaydol</a>
+
+        </ion-col>
+
+      </ion-row>
+    
+    </ion-grid>
+   
+  </div>
+  <div *ngIf="profile != 1" >
+  <ion-grid class="slide" *ngIf="catidm == 0">
+    <ion-slides>
+      <ion-slide  *ngFor="let row of maincat" col-md-2 col-lg-2 col-sm-4 (tap)="topicselect(row.slug)"> 
+        <ion-card text-center class="gride" tappable [style.background]="'url('+row.gorsel+')'" style="background-size:cover !important;background-position: center;">
+          <h3>{{row.slug | translate}}</h3>
+        </ion-card>
+    </ion-slide>
+    </ion-slides>
+  </ion-grid>
+  <ion-grid class='container kapat' *ngIf="catidm != 0">
+    <ion-row>
+      <ion-col (tap)="comeback()" col-md-3 col-lg-3 col-sm-12 col-12> 
+        <ion-card text-center class="cats" tappable style="        background: #f7f7f7;">
+          <img src="assets/icon/request-colored.svg" />
+          <h3> Talepler</h3>
+          <h5>4322</h5>
+        </ion-card>
+      </ion-col>
+      <ion-col (tap)="comeback()" col-md-3 col-lg-3 col-sm-12 col-12> 
+        <ion-card text-center class="cats" tappable >
+          <img src="assets/icon/services-colored.svg" />
+          <h3> Hizmetler</h3>
+          <h5>4322</h5>
+        </ion-card>
+      </ion-col>
+      <ion-col (tap)="comeback()" col-md-3 col-lg-3 col-sm-12 col-12> 
+        <ion-card text-center class="cats" tappable >
+          <img src="assets/icon/ads.svg" />
+          <h3> İlanlar</h3>
+          <h5>4322</h5>
+        </ion-card>
+      </ion-col>
+      <ion-col (tap)="comeback()" col-md-3 col-lg-3 col-sm-12 col-12> 
+        <ion-card text-center class="cats" tappable >
+          <img src="assets/icon/deals-colored.svg" />
+          <h3> Fırsatlar</h3>
+          <h5>4322</h5>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>

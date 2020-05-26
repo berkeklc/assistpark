@@ -1,0 +1,14 @@
+
+         <ion-menu [content]="content">
+            
+            <ion-content padding>
+              <a href="#"   color="primary" small class="ios xs menulink"  clear round mode="ios">Bir assist isteyin</a>
+              <a (tap)="goPartner()"  color="primary" small class="ios xs menulink"  clear round mode="ios">Partner olun</a>
+          
+              <a  (tap)="goLogin()" color="primary" small class="ios xs menulink"  clear round mode="ios">Oturum açın</a>
+              <a  (tap)="goRegister()"  color="primary" small class="ios sx register" round mode="ios">Kaydol</a>
+            </ion-content>
+            
+          </ion-menu>
+          <ion-nav [root]="rootPage" #content></ion-nav>
+<router-outlet></router-outlet>

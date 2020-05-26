@@ -1,0 +1,125 @@
+page-freelancerprofile {
+.kapat{display:none;}
+.segtits{text-align: left;font-size: 20px;color: #333;line-height: 30px;    white-space: normal;}
+.segment-ios-secondary .segment-button.segment-activated{border: 0;border-bottom: 1px solid black;text-align: left;color: black;padding-left: 0px;font-size: 16px;background:none;}
+.segment-ios-secondary .segment-button {border-color: unset;color: black;border: none;font-size:16px;border-bottom: 1px solid #999;text-align: left;padding-left: 16px;}
+.segment-button:hover:not(.segment-activated) {background-color: transparent!important;}
+.follow {
+    background: #FFFFFF;
+    border: 1px solid #EFEFEF;
+    border-radius: 10px;
+    text-align: right;font-size: 13px;margin-bottom:10px;
+    padding: 14px 20px;
+    color: black;
+}
+.pname{font-size: 20px;    color: #000000;    letter-spacing: -0.1px;margin:10px 0;    text-align: center;    line-height: 30px;}
+.pnamesub{font-size: 13px;margin-bottom: 15px; color: #808080;}
+.getin{font-size: 13px;background: #46BEB9;border-radius: 6px;margin-bottom: 15px;color: white;padding: 14px 70px;}
+       ion-card  ion-label{    overflow: visible;  text-align: center;}
+            .proview{float: left; font-size: 13px; color: #1A1A1A;    margin-left: 45px;}
+            .followers{font-size: 13px; color: #1A1A1A; float:left;    margin-left: 45px;}
+            .tenter{    margin: 10px 0;}
+            .editprof{    padding: 0;
+                float: right;
+                position: absolute;
+                right: 0;
+                top: 0px;
+                background: transparent;}
+                .editprof ion-label{text-align:right;padding:20px;margin:0;    padding-right: 0;}
+                .mors{    background: #EFEFEF;
+                    padding: 8px 12px;
+                    border-radius: 50%;}
+                    .labelfind ion-label{    text-align: right;
+                        margin-right: 60px;
+                        margin-top: 0;}
+                        ion-label{overflow: visible;}
+                        .hats{font-size:16px;color:black;float:left;margin-right:15px;    margin-top: 6px;}
+                        .hatsitem{font-size: 13px;color: #333;background: #efefef;padding: 11px 15px;border-radius: 10px;}
+                            .colors{font-size: 13px; color: #808080;margin-top:10px;}
+                            .edu{border: 1px solid #efefef;
+                                width: max-content;    float: left;
+                                margin-right: 10px;
+                                padding: 20px;}
+                                .edu h3{    margin-bottom: 15px;font-size:15px;}
+                                .edu p{  font-size: 13px; color: #4D4D4D;  margin-bottom: 10px;}
+                                .edu span{  font-size: 12px; color: #808080;  margin-bottom: 10px;}
+                                .postname{ text-align: left;font-size: 13px;color:black;}
+                                .postsub{ text-align: left;font-size: 12px; color: #808080;}
+                                .follows{font-size: 13px;color: #4D4d4d;float: right;margin-top: -28px;}
+                                .socials ion-icon{ color: white;
+                                    padding: 4px 5px;
+                                    background: #b2b2b2;
+                                    border-radius: 50%;
+                                    font-size: 15px;}
+.rating {position: absolute;top: 7%;left: 4%;background: #f1c40f;font-size: 12px;font-weight: 300;padding: 5px;color: #000;border-radius: 5px;}
+.servic ion-card-title{font-size: 16px; color: #000000;    white-space: normal;}
+.branding{font-size:13px;color:#808080;    margin-bottom: 30px!important;}
+.realprice{font-size: 20px;
+    color: #000000;}
+    .servic ion-card{    margin: 0;
+        box-shadow: none;
+        padding-bottom: 40px;}
+        .price {
+            margin-left: 13px;
+            margin-right: 70px;
+        }
+        .servic .buynow{ float: right; margin-right: 22px;}
+        .segment-ios .segment-button {
+            border-top-left-radius: 0px!important;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0px;
+            margin-right: 0;
+            padding: 0;
+        }
+
+        .share {
+            font-size: 13px;
+            color: #999999;
+            letter-spacing: 0.5px;
+            margin-top: 23px;
+            margin-bottom: 20px;
+        }
+        .foto{float: left;margin-right: 20px;margin-left: 20px;margin-top: 17px;font-size: 13px;color: #999999;}
+        .byar{border: 2px solid #efefef;padding: 10px;margin: 0;}
+        ion-textarea{border: 2px solid #efefef;padding: 10px;margin: 0;width: 100%;border-top: 0;}
+        .post{padding: 0;border: 1px solid #efefef;display: block;-webkit-box-shadow: none;box-shadow: none;margin-right: 0;width: 100%;margin-left: 0;margin-bottom: 30px;}
+        .post h1{font-size: 13px; color: #808080; padding: 15px;border-bottom: 1px solid #efefef;margin-bottom: 16px;
+        }
+        .post b{color:black;}
+        .postname{font-size: 16px!important;color: #000000!important;}
+        .postsub{font-size: 13px;color: #808080;line-height: 18px; margin-top: 10px;}
+        .text{font-size: 13px;    margin-top: 28px;
+            padding: 0 30px;
+            color: #333333;white-space: normal;
+            line-height: 20px;}
+        .socialbt{    font-size: 13px;    color: #000000;    float: left;    margin-right: 20px;    margin-left: 20px;    margin-bottom: 13px;    letter-spacing: 0.5px;}
+        .socialtime{font-size: 10px;
+            color: #999999;
+            text-align: right;margin-right:20px;
+            line-height: 16px;}
+
+.forlabel ion-label{overflow: hidden;}
+            ion-label img{width:unset!important}
+
+
+
+
+            .comment{font-size: 16px; color: #333333; line-height: 24px;    margin-top: 14px;    white-space: normal;}
+            .profil .stars{font-size: 16px;color:#808080}
+            .time{font-size: 12px;
+                color: #666666;    float: right;
+                margin-top: -8px;
+                text-align: right;}
+                .mores{font-size: 24px;
+                    color: #666;
+                    margin: 0 12px 10px 12px;}
+                    .profil .mar1{    margin-bottom: 70px; @include sm{margin:0;}}
+                    .profil .mar2{    border-bottom: 1px solid #efefef;
+                        padding-bottom: 10px;
+                        margin-bottom: 20px;}
+                        .imgmarg{margin-left: 0px!important;margin-right: 20px!important;float: left;border-radius: 24px;width: 48px;height: 48px;margin-top: -8px!important;@include sm{    margin-left: 0!important;
+                            margin-right: 23px!important;
+                            margin-top: 0!important;}}
+        
+}

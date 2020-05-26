@@ -1,0 +1,198 @@
+
+<ion-content>
+  <ion-grid>
+  
+    <ion-row>
+  <ion-col col-lg-7 col-md-7 col-sm-hidden class="registerbg">
+    <button ion-button iconOnly clear color="light" (tap)="geri()">
+       <img src="assets/imgs/assistlogo.png" style="height: 30px;margin: 20px; margin-top: 40px;" class="logo" />
+    </button>
+    <div class="description" style="text-align: center;">
+    <img src="assets/imgs/register.png" alt="register">
+  
+  </div>
+  </ion-col>
+        <ion-col col-12 col-lg-5 col-md-12 col-sm-12 class="registeralan">
+  
+            <ion-item class="registers">
+              <ion-label class="register-title" >Sign up with</ion-label>
+            </ion-item>
+            <ion-item >
+              <img class="i1" src="assets/imgs/f1.png" alt="">
+              <img class="i1" src="assets/imgs/f2.png" alt="">
+              <img class="i1" src="assets/imgs/f3.png" alt="">
+            </ion-item> 
+          <ion-item>
+            <p class="formbelow"> <span style="background:white; padding: 0 14px;"> Or fill the form below </span> </p>
+          </ion-item>
+
+          
+                <ion-item   >
+                  <ion-label  >Full Name</ion-label>
+                </ion-item>
+
+                  <ion-item >
+      <ion-input type="text" (ionChange)='control()' [(ngModel)]="company" placeholder="Full Name" ></ion-input>
+      </ion-item>
+
+              <ion-item >
+                <ion-label >Email</ion-label>
+          </ion-item>
+          <ion-item >
+          <ion-input type="text" (ionChange)='control2()' [(ngModel)]="email" placeholder="youremail@gmail.com" ></ion-input>
+          </ion-item>
+
+          <ion-item >
+            <ion-label >Password</ion-label> 
+          </ion-item>
+          <ion-item >
+
+          <ion-input type="password" (ionChange)='control2()' [(ngModel)]="password"  placeholder="6 or more characters"></ion-input>
+          </ion-item>
+          <ion-item >
+            <p class="policy">You agree to the Assistpark User Agreement, Privacy Policy and <br> Cookie Policy</p>
+          </ion-item>
+          <ion-item>
+
+          <button class="regbut" ion-button rounded color="primary" [disabled]="user_information_ok" (tap)="finish()">Agree & Sign up </button>
+  
+        </ion-item>
+  
+        <ion-item style="text-align: center;" >
+          <p class="log"> Already have an account? <span style="color: #0066FF;"> Login </span> </p>
+        </ion-item>
+  
+           
+  
+  
+  
+  
+        </ion-col>
+  
+     
+    </ion-row>
+  
+  </ion-grid>
+  </ion-content>
+<!-- 
+<ion-content>
+<ion-grid>
+
+  <ion-row>
+<ion-col col-lg-6 col-md-6 col-sm-hidden class="registerbg">
+  <button ion-button iconOnly clear color="light" (tap)="geri()">
+     <img src="assets/imgs/assistlogo.png" class="logo" />
+  </button>
+  <div class="description">
+  <img src="assets/imgs/register.png" alt="register">
+
+</div>
+</ion-col>
+      <ion-col col-lg-6 col-md-6 col-sm-12 class="registeralan">
+          
+
+
+ 
+          
+
+          <ion-item class="registers">
+            <ion-label class="register-title" stacked>Register your new
+            
+               <ion-select interface="popover" class="membertype">
+                  <ion-option selected value="business">Business</ion-option>
+                  <ion-option value="assistant">Assistant</ion-option>
+                </ion-select>
+           
+                account</ion-label>
+              </ion-item>
+         
+
+          <ion-slides class="register-wizard" centeredSlides="false">
+            <ion-slide class="swiper-no-swiping" text-center>
+              <h3 class="register-title-2">Choose Your Country</h3>
+              
+              <ion-row class="flags">
+                <ion-col col-md-3 col-lg-3 col-sm-4 *ngFor="let row of countries" class="flag" tappable [class.active]="country == row.abv3" (tap)="chooseCountry(row.abv3)">
+                  <img  src="https://restcountries.eu/data/{{row.abv3.toLowerCase()}}.svg" />
+                </ion-col>
+           
+                <ion-col col-12>
+                  <button ion-button rounded color="primary" [disabled]="country_selected" (tap)="next()">Selected &nbsp; <ion-icon name="arrow-forward"></ion-icon></button>
+                </ion-col>
+              </ion-row>
+              
+            </ion-slide>
+            <ion-slide>
+              <h3 class="register-title-2">Company Information</h3>
+              <ion-item stacked>
+                <ion-label stacked>Company Name</ion-label>
+    <ion-input type="text" (ionChange)='control()' [(ngModel)]="company" placeholder="Full Company Name" ></ion-input>
+    </ion-item>
+    <ion-item stacked>
+      <ion-label stacked>City</ion-label>
+<ion-select interface="popover" (ionChange)='control()' [(ngModel)]="city">
+  <ion-option selected>Choose City</ion-option>
+  <ion-option value="Izmir">Izmir</ion-option>
+</ion-select>
+</ion-item>
+<ion-item stacked>
+  <ion-label stacked>Address</ion-label>
+<ion-textarea placeholder (ionChange)='control()'  [(ngModel)]="address"></ion-textarea>
+</ion-item>
+<ion-item stacked>
+  <ion-label stacked>Employees</ion-label>
+  <ion-select [(ngModel)]="employees" interface="popover" (ionChange)='control()'>
+    <ion-option selected>Choose Emplooyes</ion-option>
+    <ion-option value="1-10">1-10</ion-option>
+    <ion-option value="11-50">11-50</ion-option>
+    <ion-option value="51-100">51-100</ion-option>
+    <ion-option value="101-300">101-300</ion-option>
+    <ion-option value="301-500">301-500</ion-option>
+    <ion-option value="501+">501+</ion-option>
+  </ion-select>
+</ion-item>
+<ion-col col-12>
+  <button ion-button rounded color="primary" [disabled]="company_information_ok" (tap)="next()">Next &nbsp; <ion-icon name="arrow-forward"></ion-icon></button>
+</ion-col>
+
+            </ion-slide>
+            <ion-slide>
+              <h3 class="register-title-2">Authorized Personal Information</h3>
+              <ion-item stacked>
+                <ion-label stacked>Name Surname</ion-label>
+    <ion-input type="text" (ionChange)='control2()' [(ngModel)]="name" placeholder="Enter name and surname" ></ion-input>
+    </ion-item>
+    <ion-item stacked>
+      <ion-label stacked>Position</ion-label>
+      <ion-select [(ngModel)]="position" interface="popover" (ionChange)='control2()'>
+        <ion-option selected>Choose Position</ion-option>
+        <ion-option value="general">General Manager</ion-option>
+        <ion-option value="sales">Sales Manager</ion-option>
+   
+      </ion-select>
+</ion-item>
+    <ion-item stacked>
+      <ion-label stacked>E-Mail</ion-label>
+<ion-input type="text" (ionChange)='control2()' [(ngModel)]="email" placeholder="Enter e-mail" ></ion-input>
+</ion-item>
+<ion-item stacked>
+  <ion-label stacked>Password</ion-label> 
+<ion-input type="password" (ionChange)='control2()' [(ngModel)]="password"  ></ion-input>
+</ion-item>
+<button ion-button rounded color="primary" [disabled]="user_information_ok" (tap)="finish()">Register &nbsp; <ion-icon name="arrow-forward"></ion-icon></button>
+
+            </ion-slide>
+          </ion-slides>
+
+         
+
+
+
+
+      </ion-col>
+
+   
+  </ion-row>
+
+</ion-grid>
+</ion-content>-->

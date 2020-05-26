@@ -1,0 +1,107 @@
+<ion-segment [(ngModel)]="icons" color="secondary" class="seghome" style="margin-top:70px;margin-bottom:30px;">
+  <ion-segment-button value="deals" >
+    <ion-icon name="flame"></ion-icon> Deals of the Day
+  </ion-segment-button>
+  <ion-segment-button value="near">
+    <ion-icon name="bonfire"></ion-icon> Near you
+  </ion-segment-button>
+  <ion-segment-button value="shop">
+    <ion-icon name="bonfire"></ion-icon> Shopping
+  </ion-segment-button>
+  <ion-segment-button value="explore">
+    <ion-icon name="bonfire"></ion-icon> Explore 
+  </ion-segment-button>
+</ion-segment>
+
+<div  [ngSwitch]="icons" >
+<ion-slides *ngSwitchCase="'deals'" slidesPerView=1 spaceBetween=0>
+  <ion-slide>
+    <ion-col col-lg-5 col-xl-5 col-md-5 col-12 class="leftblock">
+      <p class="indirim">
+         60% OFF
+      </p>
+        <ion-card-title class="slidetit">
+          Swedish Massage and Full Body Scrub for 2 People
+        </ion-card-title>
+          
+        <p class="branding">  Istanbul, Turkey </p>
+        <p class="branding"> Beauty & Wellness </p> <br>
+        <ion-col col-lg-12 col-xl-12-col-md-12 col-12 class="pricearea">
+        <span class="price"><b class="realprice">50 TL</b><b class="discountprice">30 TL</b></span>
+        <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a> 
+        </ion-col>
+      </ion-col>
+      <ion-col col-lg-7 col-xl-7 col-md-7 col-12 class="rightblock" >
+        <img style="border-radius: 20px;" src="https://via.placeholder.com/614x312?text=placeholder"/>
+    </ion-col> 
+  
+  </ion-slide>
+  <ion-slide>
+    <ion-col col-lg-5 col-xl-5 col-md-5 col-12 class="leftblock">
+        <ion-card-title class="slidetit">
+          Swedish Massage and Full Body Scrub for 2 People
+        </ion-card-title>
+          
+        <p class="branding"> Istanbul, Turkey </p>
+        <p class="branding"> Beauty & Wellness </p> <br>
+        <ion-col col-lg-12 col-xl-12-col-md-12 col-12 class="pricearea">
+        <span class="price"><b class="realprice">50 TL</b><b class="discountprice">30 TL</b></span>
+        <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a>
+        </ion-col>
+      </ion-col>
+      <ion-col col-lg-7 col-xl-7 col-md-7 col-12 class="rightblock" >
+        
+        <img style="border-radius: 20px;" src="https://via.placeholder.com/614x312?text=placeholder"/>
+
+    </ion-col> 
+  
+  </ion-slide>
+
+</ion-slides>
+
+
+<ion-slides *ngSwitchCase="'near'" slidesPerView=1 spaceBetween=0>
+
+  <ion-slide>
+    <ion-col col-lg-5 col-xl-5 col-md-5 col-12 class="leftblock">
+        <ion-card-title class="slidetit">
+          Swedish Massage and Full Body Scrub for 2 Peoples
+        </ion-card-title>
+          
+        <p class="branding"> Istanbul, Turkey </p>
+        <p class="branding"> Beauty & Wellness </p> <br>
+        <ion-col col-lg-12 col-xl-12-col-md-12 col-12 class="pricearea">
+        <span class="price"><b class="realprice">$50</b><b class="discountprice">$30</b></span>
+        <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a>
+        </ion-col>
+      </ion-col>
+      <ion-col col-lg-7 col-xl-7 col-md-7 col-12 class="rightblock" >
+        
+        <img style="border-radius: 20px;" src="https://via.placeholder.com/614x312?text=placeholder"/>
+
+    </ion-col> 
+  
+  </ion-slide>
+  <ion-slide>
+    <ion-col col-lg-5 col-xl-5 col-md-5 col-12 class="leftblock">
+        <ion-card-title class="slidetit">
+          Swedish Massage and Full Body Scrub for 2 People
+        </ion-card-title>
+          
+        <p class="branding"> Istanbul, Turkey </p>
+        <p class="branding"> Beauty & Wellness </p> <br>
+        <ion-col col-lg-12 col-xl-12-col-md-12 col-12 class="pricearea">
+        <span class="price"><b class="realprice">$50</b><b class="discountprice">$30</b></span>
+        <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a>
+        </ion-col>
+      </ion-col>
+    <ion-col col-lg-7 col-xl-7 col-md-7 col-12 class="rightblock" >
+        
+      <img style="border-radius: 20px;" src="https://via.placeholder.com/614x312?text=placeholder"/>
+
+    </ion-col> 
+  
+  </ion-slide>
+</ion-slides>
+
+</div>

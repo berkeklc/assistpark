@@ -1,0 +1,172 @@
+<ion-content>
+  <headerc ></headerc>
+  <ion-grid class="container">
+    <ion-row>
+      <ion-col col-md-3 col-lg-3 col-12 col-sm-hidden>
+<ion-list padding >
+  <h3 style="font-size:16px;">  Talep Kategorileri</h3>
+  <ion-item class="selectb" style="margin-bottom:15px;margin-top:15px;">
+    <ion-label style="font-size: 15px;    color: #333333;    letter-spacing: -0.1px;    line-height: 24px;">Seçiniz</ion-label>
+    <ion-select [(ngModel)]="gender">
+      <ion-option value="f">Health</ion-option>
+      <ion-option value="m">Male</ion-option>
+    </ion-select>
+  </ion-item>
+  <ion-item style="padding:0;">
+    <ion-searchbar style="padding: 0;" class="anasearch android md" mode="md" placeholder="Ara"></ion-searchbar>
+  </ion-item>
+  <div class="catss"> 
+  <ion-item>
+    <h3>  <ion-icon name="arrow-down"></ion-icon> Reconstructive Plastic Surgery (51)</h3>
+  </ion-item>
+  <ion-item>
+    <h3>  <ion-icon name="arrow-down"></ion-icon> Dentists (45)</h3>
+  </ion-item>
+  <ion-item>
+    <h3>  <ion-icon name="arrow-down"></ion-icon> Physiotherapy / Rehabilitation (28)</h3>
+  </ion-item>
+  <ion-item>
+    <h3>  <ion-icon name="arrow-down"></ion-icon> Oral and Dental Health (31) </h3>
+  </ion-item>
+</div>
+  <div class="hr"></div>
+</ion-list>
+
+
+      </ion-col>
+      <ion-col col-md-9 col-lg-9 col-12  class="lastchance">
+        <ion-row>
+        <ion-col col-12 col-md-5 col-lg-5>
+        <h3 style="float: left;margin-right: 20px;">Kişisel Bakım</h3>
+        <h5 style="font-size: 13px;color: #999999;">  124 request found </h5>
+        </ion-col>
+ 
+       
+  
+         <ion-item   class="filt" >
+           <ion-label style="text-align: right;  ">
+         Show filters
+        </ion-label>
+          <ion-select [selectOptions]="selectOptions" class="select2" interface="popover">
+            <ion-option value="Popularity">Popularity</ion-option>
+          </ion-select>
+         </ion-item>
+        </ion-row>
+    
+        <ion-row class="heightop">
+          <ion-col col-12 col-md-4 col-lg-4> 
+            <ion-card text-left>
+              <img src="https://via.placeholder.com/270x141?text=placeholder"/>
+                  <h4 class="rating"><ion-icon name="star"></ion-icon>3.5</h4>
+         
+              <ion-card-content>
+                <ion-card-title>
+                  3-Hour Phyto 5 Elements Spa Indulgence with Facial and Body Massage for 1 Person
+                  
+                  </ion-card-title>
+                  
+                <p class="branding">
+                  Beauty & Wellness </p>
+              </ion-card-content>
+              <a  color="primary" small class="ios sx buynow" round mode="ios" style="margin-left: 16px;">Request an offer</a>
+  
+            </ion-card>
+          </ion-col>
+          <ion-col col-12 col-md-4 col-lg-4>
+          <ion-card text-left>
+            <img src="https://via.placeholder.com/270x141?text=placeholder"/>
+                <h4 class="rating"><ion-icon name="star"></ion-icon>3.5</h4>
+       
+            <ion-card-content>
+              <ion-card-title>
+                3-Hour Phyto 5 Elements Spa Indulgence with Facial and Body Massage for 1 Person
+                
+                </ion-card-title>
+                
+              <p class="branding">
+                Beauty & Wellness </p>
+            </ion-card-content>
+            <span class="price"><b class="realprice">$50</b><b class="discountprice">$30</b></span>
+            <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a>
+
+          </ion-card>
+        </ion-col>
+        <ion-col col-12 col-md-4 col-lg-4>
+          <ion-card text-left>
+            <img src="https://via.placeholder.com/270x141?text=placeholder"/>
+                <h4 class="rating"><ion-icon name="star"></ion-icon>3.5</h4>
+       
+            <ion-card-content>
+              <ion-card-title>
+                3-Hour Phyto 5 Elements Spa Indulgence with Facial and Body Massage for 1 Person
+                
+                </ion-card-title>
+                
+              <p class="branding">
+                Beauty & Wellness </p>
+            </ion-card-content>
+            <a  color="primary" small class="ios sx buynow" round mode="ios" style="margin-left: 16px;">Request an offer</a>
+
+          </ion-card>
+        </ion-col>
+        <ion-col col-12 col-md-4 col-lg-4>
+        <ion-card text-left>
+          <img src="https://via.placeholder.com/270x141?text=placeholder"/>
+              <h4 class="rating"><ion-icon name="star"></ion-icon>3.5</h4>
+     
+          <ion-card-content>
+            <ion-card-title>
+              3-Hour Phyto 5 Elements Spa Indulgence with Facial and Body Massage for 1 Person
+              
+              </ion-card-title>
+              
+            <p class="branding">
+              Beauty & Wellness </p>
+          </ion-card-content>
+          <span class="price"><b class="realprice">$50</b><b class="discountprice">$30</b></span>
+          <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a>
+
+        </ion-card>
+         </ion-col>
+        <ion-col col-12 col-md-4 col-lg-4>
+          <ion-card text-left>
+            <img src="https://via.placeholder.com/270x141?text=placeholder"/>
+                <h4 class="rating"><ion-icon name="star"></ion-icon>3.5</h4>
+      
+            <ion-card-content>
+              <ion-card-title>
+                3-Hour Phyto 5 Elements Spa Indulgence with Facial and Body Massage for 1 Person
+                
+                </ion-card-title>
+                
+              <p class="branding">
+                Beauty & Wellness </p>
+            </ion-card-content>
+            <a  color="primary" small class="ios sx buynow" round mode="ios" style="margin-left: 16px;">Request an offer</a>
+
+          </ion-card>
+        </ion-col>
+          <ion-col col-12 col-md-4 col-lg-4>
+          <ion-card text-left>
+            <img src="https://via.placeholder.com/270x141?text=placeholder"/>
+                <h4 class="rating"><ion-icon name="star"></ion-icon>3.5</h4>
+      
+            <ion-card-content>
+              <ion-card-title>
+                3-Hour Phyto 5 Elements Spa Indulgence with Facial and Body Massage for 1 Person
+                
+                </ion-card-title>
+                
+              <p class="branding">
+                Beauty & Wellness </p>
+            </ion-card-content>
+            <span class="price"><b class="realprice">$50</b><b class="discountprice">$30</b></span>
+            <a  color="primary" small class="ios sx buynow" round mode="ios">Buy now</a>
+
+          </ion-card>
+        </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

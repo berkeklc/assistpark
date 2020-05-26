@@ -1,0 +1,68 @@
+
+<ion-content>
+  <ion-grid>
+  
+    <ion-row>
+  <ion-col col-lg-5 col-md-5 col-sm-hidden class="registerbg">
+    <button ion-button iconOnly clear color="light" (tap)="geri()">
+       <img src="assets/imgs/assistlogo.png" style="height: 30px;margin: 20px; margin-top: 40px;" class="logo" />
+    </button>
+    <div class="description" style="text-align: center;">
+  
+  </div>
+  </ion-col>
+        <ion-col col-12 col-lg-7 col-md-12 col-sm-12 class="registeralan">
+          <ion-item>
+            <img style=" height: 46px; width: 46px!important;" src="assets/imgs/freelance.png" alt="partner">
+          </ion-item>
+            <ion-item class="registers">
+              <ion-label class="register-title" >Freelancer ol</ion-label>
+            </ion-item>
+            <ion-item >
+              <img class="i1" src="assets/imgs/f1.png" alt="">
+              <img class="i1" src="assets/imgs/f2.png" alt="">
+              <img class="i1" src="assets/imgs/f3.png" alt="">
+            </ion-item> 
+          <ion-item>
+            <p class="formbelow"> <span style="background:white; padding: 0 14px;"> Or fill the form below </span> </p>
+          </ion-item>
+
+          
+                <ion-item   >
+                  <ion-label  >Full Name</ion-label>
+                </ion-item>
+
+                  <ion-item >
+      <ion-input type="text" (ionChange)='control()' [(ngModel)]="company" placeholder="Full Name" ></ion-input>
+      </ion-item>
+
+              <ion-item >
+                <ion-label >Email</ion-label>
+          </ion-item>
+          <ion-item >
+          <ion-input type="text" (ionChange)='control2()' [(ngModel)]="email" placeholder="youremail@gmail.com" ></ion-input>
+          </ion-item>
+
+          <ion-item >
+            <ion-label >Password</ion-label> 
+          </ion-item>
+          <ion-item >
+
+          <ion-input type="password" (ionChange)='control2()' [(ngModel)]="password"  placeholder="6 or more characters"></ion-input>
+          </ion-item>
+          <ion-item >
+            <p class="policy">You agree to the Assistpark User Agreement, Privacy Policy and <br> Cookie Policy</p>
+          </ion-item>
+          <ion-item>
+
+          <button class="regbut" ion-button rounded color="primary" [disabled]="user_information_ok" (tap)="finish()">Agree & Sign up </button>
+  
+        </ion-item>
+  
+        <ion-item style="text-align: center;" >
+          <p class="log"> Already have an account? <span style="color: #0066FF;"> Login </span> </p>
+        </ion-item>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-content>

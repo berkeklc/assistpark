@@ -1,0 +1,7 @@
+{
+  "name": "assistpark",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

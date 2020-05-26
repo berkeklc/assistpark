@@ -1,0 +1,609 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 1023px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+
+headerc {
+
+}
+
+.cats{  padding: 20px;    box-shadow: none;  display: flex;}
+.cats img{width:32px;height: 32px;}
+.cats h3{font-size: 18px;color: #000000;line-height: 33px;    margin-left: 10px;}
+.cats h5{    text-align: right;    line-height: 33px; font-size: 13px;    color: #999999;}
+ion-label{
+    img{
+        width: 19% !important;
+        top: 2px;
+        position: relative;
+    }
+}
+.toolbar{
+    max-height: 35px !important;
+    min-height: 35px !important;
+}
+.sp{
+   position: relative;
+   top:5px;
+   color:#fff;
+}
+
+ion-header{
+    box-shadow: none !important;
+}
+.header-md::after, .tabs-md[tabsPlacement="top"] > .tabbar::after, .footer-md::before, .tabs-md[tabsPlacement="bottom"] > .tabbar::before{
+    background-image: none !important;
+}
+.footer{
+    background: #fff;
+}
+h4{
+    font-weight: 300 !important;
+}
+h3{
+    font-weight: 200 !important;
+}
+ion-slides{
+    background:#fff !important;
+   max-height: 348px !important;
+}
+ion-slide{
+ 
+}
+small{
+  font-weight: 300 !important;
+}
+
+h5{
+    width:100% !important;font-weight: 300;
+}
+ion-list{
+    width:100% !important;
+}
+.slide{
+   
+    background: #fff !important;
+.grid, ion-grid ,ion-row ,ion-col{
+padding:0 !important;
+}
+
+.grid,ion-grid{
+padding: 0 5px 9px 7px !important;
+}
+[col-lg-2],[col-md-2]{
+   width:10% !important;
+   max-width:10% !important;
+   flex: 0 0 10%;
+   border-radius: 10px;
+   margin-right: 4px;
+}
+ion-card{
+border-radius: 10px;
+
+}
+/*
+[col-sm-4]{
+width:20% !important;
+max-width:20% !important;
+flex: 0 0 20%;
+}
+*/
+.card{
+   margin:0 !important;
+   width:100%;
+  
+}
+}
+
+
+.gride {
+    padding:10px !important;    
+    box-shadow: none !important;
+    border-right:solid 1px #ddd;
+    border-top:solid 1px #ddd;
+    height:100% !important;
+   background-size:cover !important;
+   background-position: center !important;
+    min-height:97.5px;
+}
+.gride h3{
+    top:60px;
+    position: relative;
+    font-family: 'Rubik', sans-serif;
+    color:#fff !important;
+    font-weight: bold;
+   // text-shadow: 1px 1px #000;
+    background:rgba(0,0,0,0.4);
+    padding:3px;
+    width:100% !important;
+    right:0 !important;
+}
+.gride:hover{
+    filter:blur(0px);
+}
+.gride img{
+    max-width:35% !important;
+margin:auto;
+}
+.menubars{    margin-top: 19px;    text-align: right;}
+.searchbar-input{border-radius: 24px!important;}
+.menulink{    color: black;
+    text-decoration: none;
+    font-weight: 500!important;
+    margin-right: 30px;
+    font-size: 15px!important;
+    letter-spacing: -0.2px!important;}
+    .register{@include sm{    background: transparent;
+        border-radius: 10px;
+        color: black;
+        padding: 5px 9px;
+        font-size: 15px;}    background: #46BEB9;
+        border-radius: 10px;
+        color: white;
+        padding: 15px 20px;
+        font-size: 15px;}
+.header{
+    background: #fff !important;
+    
+}
+.header .logo{
+    width:170px !important;
+    padding:8px 13px !important;
+   
+}
+.logo2{
+    width:130px !important;
+    padding:8px 13px !important;
+
+    filter:invert(1) brightness(100);
+}
+.select2{
+    width: 100% !important;
+    /* height: 65px !important; */
+  //  padding: 12px 0 !important;
+  margin-top:8px !important;
+
+}
+.select2-container--default .select2-selection--single{
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(244, 244, 244) !important;
+    height:42px !important;
+    font-size:1.2em;
+
+}
+.anasearch input{
+    background: none 0% 0% / auto repeat scroll padding-box border-box rgb(244, 244, 244) !important;
+    box-shadow: none !important;
+}
+
+.img-flag{
+    width: 12% !important;
+  
+}
+.select2-selection__rendered .img-flag{
+    width: 12% !important;
+    padding: 0px;
+    margin: 8px 0;
+    
+}
+.logocenter{ 
+    @include sm{text-align:center;}
+    text-align:left;
+}
+.menubars {
+    margin-top: 19px;
+    @include sm{text-align:center;}
+}
+.country-select{
+    @include sm{left: -12px}
+    margin-left:-5px !important;
+    position: absolute;
+    left: 35px;
+    top: -9px;
+    background:transparent;
+width:130px;
+align-items: center;
+ion-select{
+    align-items: center;
+    max-width: 100%;
+
+}
+.select-icon .select-icon-inner{
+    color:#000;
+}
+    .select-text{
+        font-family: rubik regular,open sans,Arial,sans-serif;
+  
+        color:#000;
+        font-weight: 600;
+        font-size: 0.8em;
+        padding-right:0.6em;
+    }
+}
+.item-ios.item-block .item-inner {
+    padding-right: 8px;
+    padding-right: 8px;
+    border-bottom: 0;
+}
+.select2-results__option span span {
+    font-size:1.4em !important;
+    position: relative;
+    left:5% !important;
+    font-family: rubik regular,open sans,Arial,sans-serif;
+    top: -4px;
+}
+.select2-selection__rendered span span{
+    font-size: 0.9em !important;
+    position: absolute;
+    left: 20% !important;
+    top: 38% !important;
+    line-height: 10px;
+    font-family: rubik regular,open sans,Arial,sans-serif;
+}
+
+.joinus{
+    max-height:42px !important;
+   box-shadow: none !important;
+   border:solid 1px #ddd;
+}
+.joinus img{
+    width:75% !important;
+    
+    padding:6px 15px;
+    margin:auto;
+}
+
+.popular{
+    button{
+        min-height: 58px;
+        max-height:77px !important;
+        border-bottom: solid 0.3px rgba(0,0,0,0.4);
+    }
+}
+.slide-show {
+    .limitedtime{
+        color:#e67e22;
+        font-size:0.7em;
+        padding-bottom:3px
+    }
+    .limitedtime ion-icon{
+        top:2px;
+        position: relative;
+    }
+    .discount-desc{
+        padding-left:12px;
+    }
+    .discount {
+        position: absolute;
+        top:-1%;
+        left:5%;
+        background: #46beb9;
+        padding:5px;
+        color:#fff;
+        font-family: rubik regular,open sans,Arial,sans-serif;
+        font-size:0.8em;
+        font-weight: 300;
+        border-radius:5px;
+    }
+    .rating{
+        position: absolute;
+        top:10%;
+        left:5%;
+        background: #f1c40f;
+        font-size:0.8em;
+        font-weight: 300;
+        padding:5px;
+        color:#fff;
+        border-radius:5px;
+    }
+    .title{
+        font-size:1em;
+        font-weight: 300;
+        padding-right:8px;
+    }
+    .realprice{
+color:#ddd;
+text-decoration: line-through;
+font-weight: 300;
+
+padding-right:7px;
+    }
+    .discountprice{
+        color:#27ae60;
+        font-weight: 400;
+    }
+    img{
+    padding-left:15px;
+}
+}
+
+.interesting{
+    h4{
+        font-weight: 300 !important;
+    }
+    ion-slides{
+        background: transparent !important;
+    }
+    ion-slide{
+        border-radius:10px;
+        max-height: 100px;
+    }
+    ion-slide img{
+        border-radius:10px;
+        min-height: 100px;
+        max-height: 100px;
+    }
+    margin-bottom:3vh;
+}
+.card-ios{    border: 1px solid #efefef;
+    border-radius: 15px;
+}
+.lastchance{
+    h4{
+        font-weight: 300 !important;
+    }
+    ion-slides{
+        background: transparent !important;
+    }
+    
+    margin-bottom:3vh;
+
+    ion-card{
+        box-shadow: none;
+        min-height: 347px !important;
+        height: 270px !important;
+        margin: 0 !important;
+        width: 100% !important;
+    }
+    .card-title{
+        font-size: 13px;
+        color: #000000;
+        line-height: 20px;   
+         text-align: justify;
+        font-weight: 400;
+        padding:0 !important;
+        margin:0 !important;
+        margin-bottom: 10px!important;
+    }
+    .card-content{
+        padding: 14px 34px;
+    font-size: 13px;    margin-bottom: 30px;
+    }
+    .discount {
+        position: absolute;
+        top:0.5%;
+        left:2%;
+        background: #46beb9;
+        padding:5px;
+        color:#fff;
+        font-family: rubik regular,open sans,Arial,sans-serif;
+        font-size:0.9em;
+        font-weight: 300;
+        border-radius:5px;
+    }
+    .rating{
+        position: absolute;
+        top: 4%;
+        left: 4%;
+    background: #f1c40f;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 5px;
+    color: #000;
+    border-radius: 5px;
+    }
+    .title{
+        font-size:1em;
+        font-weight: 300;
+        padding-right:8px;
+    }
+    .branding{
+        font-size:1em;
+        font-weight: 400;
+       color:#99a9b4;
+    }
+    .kalan{
+        position: absolute;
+        right:13px;
+        bottom:6px;
+        font-family: rubik regular,open sans,Arial,sans-serif !important;
+    font-weight: 300 !important;
+    }
+    .realprice{
+        font-size: 14px;
+        color: #B3B3B3;
+text-decoration: line-through;
+font-weight: 300;
+
+padding-right:7px;
+    }
+    .discountprice{
+        font-size: 16px;
+        color: #000000;
+        font-weight: 400;
+    }
+}
+.collections{
+ion-col,ion-grid,ion-row{
+    padding:0 !important;
+}
+ion-col{
+    padding-right:7px !important;
+    padding-bottom:5px !important;
+}
+}
+.preferredexperinces{
+    h4{
+        font-weight: 300 !important;
+    }
+    ion-slides{
+        background: transparent !important;
+    }
+    
+    margin-bottom:0vh;
+
+    ion-card{
+        border: 1px solid #efefef;
+        border-radius: 15px;
+    
+        min-height:360px !important;
+        height:270px !important;
+        margin:0 !important;
+        width: 100% !important;
+    }
+    .card-title{
+        font-size:1.1em;
+        font-weight: 400;
+        padding:0 !important;
+        margin:0 !important;
+        margin-bottom: 10px!important;
+       
+    }
+    .card-content{
+        padding: 14px 8px;
+        font-size: 1.3rem;
+    }
+    .discount {
+        position: absolute;
+        top:0.5%;
+        left:2%;
+        background: #46beb9;
+        padding:5px;
+        color:#fff;
+        font-family: rubik regular,open sans,Arial,sans-serif;
+        font-size:0.9em;
+        font-weight: 300;
+        border-radius:5px;
+    }
+    .gotext{
+        font-weight: 700 !important; 
+        font-family: rubik  !important;
+        width:70% !important;
+        float:left;
+        text-align: center;
+        font-size:1.4em !important;
+        padding:32px;
+    }
+    .gobutton{
+        padding:0 !important;
+        display: block !important;
+    }
+    .gobutton div{
+        width:100% !important;
+    }
+    .goicon{
+        width:30% !important;
+        float:right;
+        background: rgba(0,0,0,0.1);
+        padding:25px;
+        height:100% !important;
+    }
+    .gobutton{
+        bottom:-4px;
+        position: absolute;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+    }
+    .rating{
+        position: absolute;
+        top:8%;
+        left:2%;
+        background: #f1c40f;
+        font-size:0.9em;
+        font-weight: 300;
+        padding:5px;
+        color:#fff;
+        border-radius:5px;
+    }
+    .title{
+        font-size:1em;
+        font-weight: 300;
+        padding-right:8px;
+    }
+    .branding{
+        font-size:1em;
+        font-weight: 400;
+       color:#99a9b4;
+    }
+    .kalan{
+        position: absolute;
+        right:13px;
+        bottom:6px;
+        font-family: rubik regular,open sans,Arial,sans-serif !important;
+    font-weight: 300 !important;
+    }
+    
+   
+    .realprice{
+color:#ddd;
+text-decoration: line-through;
+font-weight: 300;
+
+padding-right:7px;
+    }
+    .discountprice{
+        color:#27ae60;
+        font-weight: 400;
+    }
+}
+
+.footer ul{
+    list-style: none !important;
+    padding-left:0 !important;
+}
+.cities{
+    padding:0 !important;
+    ion-col{
+        padding-top:0 !important;
+        padding-bottom:0 !important;
+        
+    }
+    .button{
+        margin:0 !important;
+    }
+}
+.sx{
+    min-width: 95px;
+    max-width:95px !important;
+}
+.xs{
+    min-width: 60px;
+    max-width:60px !important;
+    font-weight: 700;
+    font-family: rubik regular,open sans,Arial,sans-serif !important;
+   
+}

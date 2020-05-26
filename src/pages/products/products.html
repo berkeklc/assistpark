@@ -1,0 +1,104 @@
+<headerc profile="1" back="true"></headerc>
+<subtoolbar type="products"></subtoolbar>
+<ion-content>
+<ion-grid>
+<ion-col col-12>
+  <ion-segment [(ngModel)]="type" color="darkblue" (ionChange)="onSegmentChanged($event)">
+    <ion-segment-button value="products">
+      Products
+    </ion-segment-button>
+    <ion-segment-button value="services">
+      Services
+    </ion-segment-button>
+   
+
+  </ion-segment>
+</ion-col>
+  <ion-col col-12>
+    <ion-list *ngIf="type == 'products'">
+<ion-list>
+  <ion-item color="darkblue" class="head">
+    <ion-label class="sira">
+      #
+    </ion-label>
+    <ion-label>
+      Product
+    </ion-label>
+    <ion-label>
+      Category
+    </ion-label>
+    <ion-label>
+      Sub Category
+    </ion-label>
+   
+    <ion-label>
+      Created time
+    </ion-label>
+  </ion-item>
+  <ion-item *ngFor="let row of products;let i = index" (tap)="goProduct(row.ID)">
+    <ion-label class="sira" >
+      {{i+1}}
+    </ion-label>
+    <ion-label>
+      {{row.name}}
+    </ion-label>
+    <ion-label>
+      {{row.category }}
+    </ion-label>
+    <ion-label>
+      {{row.subcategory}}
+    </ion-label>
+   
+    <ion-label>
+     {{row.created_time}}
+    </ion-label>
+  </ion-item>
+
+</ion-list>
+    </ion-list>
+    <ion-list *ngIf="type == 'services'">
+      <ion-list>
+        <ion-item color="darkblue" class="head">
+          <ion-label class="sira">
+            #
+          </ion-label>
+          <ion-label>
+            Product
+          </ion-label>
+          <ion-label>
+            Category
+          </ion-label>
+          <ion-label>
+            Sub Category
+          </ion-label>
+         
+          <ion-label>
+            Created time
+          </ion-label>
+        </ion-item>
+        <ion-item *ngFor="let row of services;let i = index" (tap)="goProduct(row.ID)">
+          <ion-label class="sira" >
+            {{i+1}}
+          </ion-label>
+          <ion-label>
+            {{row.name}}
+          </ion-label>
+          <ion-label>
+            {{row.category }}
+          </ion-label>
+          <ion-label>
+            {{row.subcategory}}
+          </ion-label>
+         
+          <ion-label>
+           {{row.created_time}}
+          </ion-label>
+        </ion-item>
+      
+      </ion-list>
+    </ion-list>
+   
+  
+  </ion-col>
+</ion-grid>
+</ion-content>

@@ -1,0 +1,286 @@
+page-companyservice {
+    ion-slides{max-height: unset!important;}
+    .rad img{border-radius: 25px;}
+   .bread h5{font-size: 12px;        color: #333333;}
+   .bread .last{font-size: 12px;        color: #999;}
+   .bread .ok{font-size: 12px;margin:0 10px;        color: #999;}
+   .pricearea{background: #F7F7F7; padding:0;    padding-top: 20px;   border-radius: 25px;}
+   .realprice{
+    color:#999;
+    text-decoration: line-through;
+    font-weight: 300;
+    padding-right:7px;font-size: 19px;padding-left: 30px;
+        }
+        .buyers{    font-size: 9px;
+            text-align: right;
+            margin-right: 21px;
+            margin-bottom: 10px;    position: absolute;
+            right: 20px;
+            top: 30px;
+        }
+    .pricearea    .discountprice{
+            font-size: 40px;padding-left: 30px;
+            color: #000000;
+            line-height: 36px;
+        }
+        .wish{    text-align: center;
+            margin-top: 37px;
+            border-top: 2px solid #E6E6E6;
+            padding-top: 17px;
+            margin-bottom: 10px!important;
+            font-size: 16px;
+            color: #4D4D4D;}
+            .buynoww {float: right;font-size: 15px;background: #46BEB9;border-radius: 6px;color: white;position: absolute;right: 20px;top: 50px;padding: 14px 15px;}
+                .rating {position: absolute;top: 12%!important;left: 4%;background: #f1c40f;font-size: 12px;font-weight: 300;padding: 5px;color: #000;border-radius: 5px;}
+                .price {
+                    margin-left: 0;margin-right: 43px;
+                }
+                .profil{background: #F7F7F7;padding: 0;padding-top: 7px;border-radius: 25px;text-align: center;    padding-bottom: 18px;    height: 272px;}
+                    .profil img{border-radius: 48px;
+                        margin-bottom: 15px;
+                        width: unset !important;
+                        margin: 0 -12px;
+                        border: 2px solid white;
+                        margin-bottom: 14px;
+                        margin-top: 10px;}
+                    .pname{font-family: AvenirNext-Medium;
+                        font-size: 16px;    margin-bottom: 15px;
+                        color: #000000;} 
+                         .pnamesub{font-family: AvenirNext-Medium;
+                            font-size: 12px;    margin-bottom: 40px;
+                            color: #808080;}
+                            .getin {  
+                                font-size: 15px;background: #46BEB9;
+                                border-radius: 6px;    margin-bottom: 15px;
+                                color: white;    
+                                padding: 14px 70px;}
+                                .adres{font-size: 10px;
+                                    color: #808080;    margin-top: 27px;
+                                    text-align: center;}
+                                    .btnPrev {
+                                        position: absolute;
+                                        left: -6%;
+                                        z-index: 99;
+                                        top: 29%;
+                                        color: #666;
+                                        background: #EFEFEF;
+                                        opacity: 1;
+                                        border-radius: 50%;
+                                        padding: 20px;
+                                    }
+                                    .btnNext {
+                                        position: absolute;
+                                        right: -6%;
+                                        z-index: 99;
+                                        top: 29%;
+                                        color: #666;
+                                        background: #EFEFEF;
+                                        opacity: 1;
+                                        border-radius: 50%;
+                                        padding: 20px;
+                                    }
+                                    .card-ios{border:none;    display: table-cell;}
+                                    .card-ios img{    display: unset;}
+                                    .contentitle{font-size: 13px; color: #333333;}
+                                    .contentitle2{font-size: 26px;color: #000000;letter-spacing: -0.1px;}
+                                    .content{font-size: 16px;color: #333333;line-height: 26px;}
+                                    .resreq{font-size: 16px;
+                                        color: #666666;}
+.segtits{text-align: left;font-size: 16px;color: black;}
+.segment-ios-secondary .segment-button.segment-activated{border: 0;border-bottom: 1px solid black;text-align: left;color: black;padding-left: 0px;font-size: 16px;background:none;}
+.segment-ios-secondary .segment-button {border-color: unset;color: black;border: none;font-size:16px;border-bottom: 1px solid #999;text-align: left;padding-left: 16px;}
+.avaible{font-size: 22px;margin-top: 18px;color: #000000;margin-bottom: 15px;text-align: center;}
+.profilpic{position: absolute;left: 35px;border-radius: 20px;bottom: -66px;border: 1px solid white; @include sm{display:none;}}
+.cover{border-radius: 25px;}
+.combname{font-size: 26px;color: #000000;letter-spacing: -0.12px;text-align:left;line-height: 36px;}
+.compcat{font-size: 12px; color: #808080;  margin-right:15px;  float: left;}
+ion-label{overflow: visible; margin-bottom: 30px;}
+.follow{background: #FFFFFF;border: 1px solid #EFEFEF;border-radius: 10px;text-align: right;padding:14px 20px;color:black;}
+.centerall{border-top: 1px solid #efefef;border-bottom: 1px solid #efefef;text-align: center;align-items: center;text-align: -webkit-center;}
+.kapat{display:none;}
+.cats h3{font-size: 12px;margin:0; color: #1A1A1A;}
+.cats{padding: 20px 45px; @include sm{width: 100%!important;
+    padding: 0;
+    margin: 0;
+    display: table;}}
+.share{font-size: 13px; color: #999999; letter-spacing: 0.5px;margin-top: -22px;}
+.foto{float: left;margin-right: 20px;margin-left: 20px;margin-top: 17px;font-size: 13px;color: #999999;}
+.byar{border: 2px solid #efefef;padding: 10px;margin: 0;border-bottom: 0;}
+ion-textarea{border: 2px solid #efefef;padding: 10px;margin: 0;width: 100%;border-top: 0;}
+.post{    padding: 0;
+    border: 1px solid #efefef;
+    display: block;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin-right: 0;
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;}
+.post h1{font-size: 13px; color: #808080; padding: 15px;border-bottom: 1px solid #efefef;margin-bottom: 16px;
+}
+.post b{color:black;}
+.postname{font-size: 16px!important;color: #000000!important;}
+.postsub{font-size: 13px;color: #808080;line-height: 18px; margin-top: 10px;}
+.text{font-size: 13px;color: #333333;line-height: 20px;margin-top: 30px;padding: 0 26px;margin-bottom: 20px;}
+.socialbt{    font-size: 13px;    color: #000000;    float: left;    margin-right: 20px;    margin-left: 20px;    margin-bottom: 13px;    letter-spacing: 0.5px;}
+.socialtime{font-size: 10px;
+    color: #999999;
+    text-align: right;margin-right:20px;
+    line-height: 16px;}
+
+
+
+    .pa13 {
+        padding: 13px;
+    }
+    .label-ios{    margin: 0;font-size: 13px;}
+    .checkbox-ios-darkblue .checkbox-checked {
+        border-color: #fff;
+        color: white;
+        background-color: #46BEB9;
+    }
+    .checkbox-ios-darkblue .checkbox-checked .checkbox-inner {
+        border-color: #fff;
+    }
+.selectb{    background: #EFEFEF;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: -0.1px;
+    line-height: 24px;
+    border-radius: 10px;}
+    .select-text {
+        overflow: hidden;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        min-width: 15px;
+        font-size: inherit;
+        text-overflow: ellipsis;
+        /* white-space: nowrap; */
+        font-size: 0.8em !important;
+        font-family: rubik regular,open sans,Arial,sans-serif;
+        top: -4px;
+        position: relative;
+    }
+    .countries_check{
+        img{
+            width:20px !important;
+            height:20px;
+            border-radius:35px;
+            top:2px;
+            position: relative;
+        }
+    }
+    .list-ios {
+        margin: -1px 0 2px;
+    }
+    .talepkonum{    font-size: 12px;
+        width: 50%!important;
+        color: #999999;
+        float: left;}
+        .talepsaat{    font-size: 12px;
+            width: 50%!important;    text-align: right;
+            color: #999999;
+            float: left;}
+    .lastchance{
+        .card-title{    font-size: 13px;
+            color: #000000;
+            line-height: 20px;
+            text-align: left;
+            font-weight: 400;
+            padding: 0 !important;
+            margin: 0 !important;
+            font-family: "Avenir Next" !important;
+            margin-bottom: 10px !important;}
+        ion-col{
+            padding-left:0 !important;
+            padding-bottom:8px !important;
+            padding-right:9px !important;
+            margin-right:0px !important;
+         
+        }
+        ion-card{
+    /* max-height: 70px !important; */
+    padding: 0px !important;
+        }
+        .kalan{
+            bottom:11px;
+        }
+        .discount{
+            top: 5.5%;
+    left: 6%;
+        }
+        .rating{
+            top: 6%!important;
+    left: 6%;
+        }
+    }
+ion-label{
+    font-weight: 300;overflow: visible;
+}
+ion-label img {
+    top: -4px;
+    position: relative;
+}
+h3{
+    font-family: AvenirNext-Medium;
+    font-size: 22px;
+    color: #000000;    margin: 8px;
+}
+ion-item{
+
+}
+.ppcat{width:36px!important;height:36px;border-radius: 50%;}
+.catss h3{
+    font-family: AvenirNext-Medium;
+    font-size: 13px!important;
+    color: #808080;
+    line-height: 18px;
+    
+}
+.price {
+    margin-left: 18px;
+    margin-right: 70px;
+}
+.lastchance .card-content {
+    padding: 13px 16px !important;
+    font-size: 13px !important;
+    margin-bottom: 20px;
+    text-align: left;
+    margin-top: 0px !important;
+}
+.name{font-size: 13px; 
+    color: #000000;}
+    .talep{font-size: 12px; color: #999999;}
+    .descs{font-size: 13px;
+        color: #000000;
+        line-height: 20px;}
+.catss ion-item:first-child{padding-left: 0; margin-top: 10px;}
+.catss ion-item{padding-left: 0; margin-top: 0px;}
+.item-inner{ border-bottom:0 !important;padding: 0;padding-right:0!important;}
+.checkbox{ margin: 9px 10px 9px -8px !important;}
+.hr{
+    padding-bottom:15px;
+    min-height: 15px;
+    width:100%;
+    background:#fff;
+}
+.filt {background: #EFEFEF;
+    font-size: 13px;
+    color: #000000;
+    border-radius: 10px;    width: 153px;
+    float: right;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    right: 15px;
+}
+.select2 {
+    width: unset!important;
+    margin-top: unset!important;
+}
+.checkbox-ios .checkbox-icon{border-radius: 5px;}
+.lastchance  .card-ios{    border: 1px solid #efefef;    padding-bottom: 20px!important;}
+.lastchance  .buynow{     padding: 10px 13px;}
+}

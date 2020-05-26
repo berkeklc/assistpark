@@ -1,0 +1,136 @@
+// Small tablets and large smartphones (landscape view)
+$screen-sm-max: 1023px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+ }
+ 
+ // Medium devices
+ @mixin md {
+    @media (min-width: #{$screen-md-min}) {
+        @content;
+    }
+ }
+ 
+ // Large devices
+ @mixin lg {
+    @media (min-width: #{$screen-lg-min}) {
+        @content;
+    }
+ }
+ 
+ // Extra large devices
+ @mixin xl {
+    @media (min-width: #{$screen-xl-min}) {
+        @content;
+    }
+ }
+ @font-face {
+    font-family: 'Avenir Next';
+    src: url("http://localhost:8100/assets/fonts/Metropolis-Medium.otf"); /* File to be stored at your site */
+    }
+    .btnNext{ @include sm{display:none}   position: absolute;
+        right: -6%;
+        z-index: 99;
+        top: 50%;
+        color: #666;
+        background: #EFEFEF;
+        opacity: 1;
+        border-radius: 50%;
+        padding: 20px;}
+        .btnPrev{ @include sm{display:none}  position: absolute;
+            left: -6%;
+            z-index: 99;
+            top: 50%;
+            color: #666;
+            background: #EFEFEF;
+            opacity: 1;
+            border-radius: 50%;
+            padding: 20px;}
+    h1, h2, h3, h4, h5, h6, p, a, span{ font-family: "Avenir Next" !important;}
+    .btnnew{margin-left: 30px;margin-right: 10px;background: transparent;color: black;border: 1px solid black;width: 107px;font-size: 13px;letter-spacing: -0.1px;display: unset;}
+    .homimg1{position: relative;z-index: 999;right: -15px;text-align: right;float: right;top: -13px;
+        @include sm{
+            position: relative;
+            z-index: 999;
+            right: 15px;
+            text-align: right;
+            float: right;
+            top: 23px;
+            height: 50%;
+    }
+    }
+    .hometit{
+        font-size: 30px;color: #000000;line-height: 42px;padding-right: 177px;padding-left: 31px;
+        @include sm{
+            font-size: 26px;
+    color: #000000;
+    line-height: 37px;
+    padding-right: 15px;
+    padding-left: 15px;
+    }
+    
+    }
+    .hometit2{
+        font-size: 22px;color: #000000;line-height: 30px;padding: 0;  padding-right: 70px; 
+        @include sm{  padding:0;     width: 77%!important; }
+    }
+    .hometit3{font-size: 22px;color: #000000;line-height: 30px;padding-right: 290px;margin-left: 39px;
+        @include sm{  padding:0;     margin-left: 10px; }
+    }
+    .bgrey1{
+        background-color: #f7f7f7; max-width: 48%;margin-right: 22px; border-radius: 30px;
+        @include sm{
+            max-width: 100%;    margin-bottom: 30px;
+        }
+    }
+    .pp{    position: relative;
+        left: 100px;
+        text-align: center;
+        border-radius: 15px;
+        border: 1px solid white;
+        top: -31px;}
+    .bgrey2{background-color: #f7f7f7; height: min-content; border-radius: 30px;    padding-bottom: 60px;    display: block;@include sm{padding-bottom:30px;}} 
+    .homeimg2{position: relative;z-index: 999;right: -45px;/* text-align: right; */float: left;top: -13px;height: 200px;margin-right: 83px; @include sm{      height: unset;  position: relative;
+        z-index: 999;
+        left: 4px;
+        text-align: center;
+        float: left;
+        top: -13px;
+        width: 230px;
+        margin-right: 83px;}}     
+    .homeimg3{position: absolute; top: 20px;right: 20px; @include sm{    position: relative;
+        bottom: -17px;
+        right: 0;}}
+   .smallimg{     
+   width: unset !important;    border: 2px solid white;    margin: 0 -7px;
+    display: unset;
+    border-radius: 50%;
+    text-align: center;
+    align-items: center}
+    .buynow{    background: #46BEB9;
+        border-radius: 6px;
+        color: white;
+        padding: 10px 15px;
+        font-size: 13px;}
+        .assis {font-family: Avenir Next;
+            font-size: 16px!important;
+            color: #000000!important;
+            text-align: center!important;
+            line-height: 22px!important;}
+.price{margin-left: 32px;margin-right: 70px;}
+.ion-ios-star{color: black;}
+.swiper-container{overflow-y: visible;}
+    
